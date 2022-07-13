@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" CombinedDecision="false" ReturnPolicyIdList="false">
+  <Attributes Category="foo">
+    <Attribute AttributeId="one" IncludeInResult="false">
+      <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+    </Attribute>
+    <Attribute AttributeId="two" IncludeInResult="false">
+      <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">2</AttributeValue>
+    </Attribute>
+  </Attributes>
+  <Attributes Category="bar">
+    <Attribute AttributeId="three" IncludeInResult="true">
+      <AttributeValue DataType="baz">bam</AttributeValue>
+    </Attribute>
+  </Attributes>
+</Request>
